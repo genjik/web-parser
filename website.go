@@ -29,8 +29,8 @@ type fetchedWebsite struct {
 }
 
 type result struct {
-    Url string
-    Data map[string][]string
+    Url string `json:"url"`
+    Data map[string][]string `json:"data"`
 }
 
 func (w *website) isEqualTo(w2 *website) bool {
